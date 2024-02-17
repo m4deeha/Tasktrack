@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <script src="js\app.js"></script>
+  <link rel="stylesheet" href="css\style.css">
+</head>
+
+<body>
+  <div id="task-container">
+    <img src="images\images.jpg" alt="Task Image" class="task-image">
+    <h1>Task Tracker</h1>
+    <div class="taskk">
+      <label>Title:</label>
+      <input type="text" id="title" placeholder="Add Task Title">
+    </div>
+    <div class="desc">
+      <label>Description:</label>
+      <textarea id="description" placeholder="Add Description"></textarea>
+    </div>
+    <div class="date">
+      <label>Due Date:</label>
+      <input type="date" id="due-date">
+    </div>
+    <div class="add">
+    <button onclick="addTask()">Add Task</button>
+    </div>
+    <div id="filter-options" class="filter">
+      <label>Sort By:</label>
+      <select id="sort-by" onchange="sortTasks()">
+        
+        <option value="dueDate">Due Date</option>
+        <option value="title">Title</option>
+      </select>
+ 
+ 
+      <label>Filter By Due Date:</label>
+      <input type="date" id="filter-due-date" onchange="filterTasks()">
+      
+    
+</div>
+<div id="tasks">
+<h3>To do :</h3>
+</div>
+  </div>
+
+
+</body>
+</html>
